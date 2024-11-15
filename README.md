@@ -1,8 +1,21 @@
-# \<ib-ds>
+# iberia-patternfly
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+This is a POC of the Iberia Patternfly project. It is a project that aims to create a design system for Iberia, based on the Patternfly project.
+
+## References
+
+- [Patternfly](https://www.patternfly.org/v4/)
+- [Figma components](https://www.figma.com/@patternfly)
+- [patternfly elements (Web Components)](https://patternflyelements.org/get-started/)
+- [Patternfly Design System](https://www.patternfly.org/)
+
+
+
+
+
 
 ## Installation
+This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ```bash
 npm i ib-ds
