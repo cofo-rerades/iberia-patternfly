@@ -11,11 +11,13 @@
         background: #fafafa;
       }
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="p-8">
     <script type="module">
       import { html, render } from 'lit';
       import '../dist/src/ib-ds.js';
+      import '../dist/src/ib-accordion.js';
 
       const header = 'Hello owc World!';
       render(
@@ -24,9 +26,114 @@
       );
     </script>
 
-    <h2>Web Component examples</h2>
-    <div></div>
-    <div id="demo"></div>
-    <ib-ds> some light-dom </ib-ds>
+    <h2 class="text-xl mb-4">Web Component examples</h2>
+    <div class="border-2 mb-4 p-2 border-b">
+      Componentes incluidos con JS
+      <div id="demo"></div>
+    </div>
+    <div class="border-2 p-2">
+      <p class="text-lg py-2 text-green-800 font-bold border-b">
+        Componente custom
+      </p>
+      <ib-ds> some light-dom </ib-ds>
+      <p class="text-lg py-2 text-green-800 font-bold border-b mb-8">
+        componente directo de patternfly
+      </p>
+      <div class="w-4/6 mb-4">
+        <pf-accordion>
+          <pf-accordion-header>
+            <h3>
+              Laboris sunt qui dolor consectetur excepteur in aliqua ipsum?
+            </h3>
+          </pf-accordion-header>
+          <pf-accordion-panel>
+            <p>
+              Culpa adipisicing sunt dolor ullamco dolor duis in ad commodo.
+            </p>
+            <a href="#">Call to action</a>
+          </pf-accordion-panel>
+          <pf-accordion-header>
+            <h3>
+              Anim est tempor fugiat pariatur laborum deserunt ex mollit
+              aliquip?
+            </h3>
+          </pf-accordion-header>
+          <pf-accordion-panel>
+            <p>
+              <a href="#">Ullamco ullamco sint</a> ex id magna elit deserunt
+              dolore nostrud eu et dolore est Lorem. Esse laborum do ut
+              consectetur occaecat proident et nostrud ut nostrud veniam officia
+              Lorem.
+            </p>
+          </pf-accordion-panel>
+          <pf-accordion-header>
+            <h3>Nostrud ad sit commodo nostrud?</h3>
+          </pf-accordion-header>
+          <pf-accordion-panel>
+            <p>
+              Nisi veniam tempor reprehenderit laboris amet laborum et do ut.
+              Veniam eiusmod aliquip ullamco quis esse laborum Lorem
+              exercitation consequat.
+            </p>
+          </pf-accordion-panel>
+          <pf-accordion-header>
+            <h3>Reprehenderit cupidatat labore?</h3>
+          </pf-accordion-header>
+          <pf-accordion-panel>
+            <p>
+              Magna incididunt aliquip consectetur dolor adipisicing amet cillum
+              officia nostrud. Elit exercitation voluptate aute nostrud.
+            </p>
+            <a href="#">Call to action</a>
+          </pf-accordion-panel>
+        </pf-accordion>
+      </div>
+      <p class="text-lg py-2 text-green-800 font-bold border-b mb-8">
+        Componente de Iberia Wrapper de patternfly
+      </p>
+
+      <ib-accordion>
+        <ib-accordion-header>
+          <h3>Laboris sunt qui dolor consectetur excepteur in aliqua ipsum?</h3>
+        </ib-accordion-header>
+        <ib-accordion-panel>
+          <p>Culpa adipisicing sunt dolor ullamco dolor duis in ad commodo.</p>
+          <a href="#">Call to action</a>
+        </ib-accordion-panel>
+        <ib-accordion-header>
+          <h3>
+            Anim est tempor fugiat pariatur laborum deserunt ex mollit aliquip?
+          </h3>
+        </ib-accordion-header>
+        <ib-accordion-panel>
+          <p>
+            <a href="#">Ullamco ullamco sint</a> ex id magna elit deserunt
+            dolore nostrud eu et dolore est Lorem. Esse laborum do ut
+            consectetur occaecat proident et nostrud ut nostrud veniam officia
+            Lorem.
+          </p>
+        </ib-accordion-panel>
+        <ib-accordion-header>
+          <h3>Nostrud ad sit commodo nostrud?</h3>
+        </ib-accordion-header>
+        <ib-accordion-panel>
+          <p>
+            Nisi veniam tempor reprehenderit laboris amet laborum et do ut.
+            Veniam eiusmod aliquip ullamco quis esse laborum Lorem exercitation
+            consequat.
+          </p>
+        </ib-accordion-panel>
+        <ib-accordion-header>
+          <h3>Reprehenderit cupidatat labore?</h3>
+        </ib-accordion-header>
+        <ib-accordion-panel>
+          <p>
+            Magna incididunt aliquip consectetur dolor adipisicing amet cillum
+            officia nostrud. Elit exercitation voluptate aute nostrud.
+          </p>
+          <a href="#">Call to action</a>
+        </ib-accordion-panel>
+      </ib-accordion>
+    </div>
   </body>
 </html>
