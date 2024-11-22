@@ -28,7 +28,7 @@
 
       const header = 'Hello owc World!';
       render(
-        html` <ib-ds .header=${header}> some light-dom </ib-ds> `,
+        html`<ib-ds .header=${header}> some light-dom </ib-ds>`,
         document.querySelector('#demo'),
       );
     </script>
@@ -36,7 +36,11 @@
     <h2 class="text-xl mb-4">Web Component examples</h2>
     <div class="border-2 mb-4 p-2 border-b">
       <p>Componentes custom , incluido con JS</p>
-      <p></p>
+
+      <div id="demo" class="border border-cyan-800 m-4"></div>
+
+      <ib-ds> some light-dom </ib-ds>
+
       <pre><code class="language-javascript">
         import { html, render } from 'lit';
         import '../dist/src/ib-ds.js';
@@ -45,8 +49,6 @@
           document.querySelector('#demo'),
         );
         </code></pre>
-
-      <div id="demo" class="border border-cyan-800 m-4"></div>
     </div>
     <div class="border-2 p-2">
       <p class="text-lg py-2 text-green-800 font-bold border-b mb-8">
@@ -133,11 +135,9 @@
         </a>
       </p>
       <div class="w-4/6 mb-4 border border-cyan-800 m-4">
-        <ib-accordion>
-          <ib-accordion-header>
-            <h3>
-              Laboris sunt qui dolor consectetur excepteur in aliqua ipsum?
-            </h3>
+        <ib-accordion single>
+          <ib-accordion-header icon="angle-down">
+            <h3>Custom Header Text</h3>
           </ib-accordion-header>
           <ib-accordion-panel>
             <p>
@@ -145,7 +145,7 @@
             </p>
             <a href="#">Call to action</a>
           </ib-accordion-panel>
-          <ib-accordion-header>
+          <ib-accordion-header icon="angle-down">
             <h3>
               Anim est tempor fugiat pariatur laborum deserunt ex mollit
               aliquip?
@@ -159,7 +159,7 @@
               Lorem.
             </p>
           </ib-accordion-panel>
-          <ib-accordion-header>
+          <ib-accordion-header icon="angle-down">
             <h3>Nostrud ad sit commodo nostrud?</h3>
           </ib-accordion-header>
           <ib-accordion-panel>
@@ -169,7 +169,7 @@
               exercitation consequat.
             </p>
           </ib-accordion-panel>
-          <ib-accordion-header>
+          <ib-accordion-header icon="angle-down">
             <h3>Reprehenderit cupidatat labore?</h3>
           </ib-accordion-header>
           <ib-accordion-panel>

@@ -8,6 +8,19 @@ export class IbAccordionPanel extends PfAccordionPanel {
 
   connectedCallback() {
     super.connectedCallback();
+    const style = new CSSStyleSheet();
+    style.replaceSync(`
+      .body {
+        border-bottom: 1px solid #666;
+
+      }`);
+    // Add CSS variables via adoptedStyleSheets
+    if (this.shadowRoot) {
+      this.shadowRoot.adoptedStyleSheets = [
+        ...this.shadowRoot.adoptedStyleSheets,
+        style,
+      ];
+    }
     console.log('IbAccordionPanel connected to the DOM');
   }
 

@@ -20,9 +20,26 @@ export class IbAccordionHeader extends PfAccordionHeader {
     // @ts-ignore
     this.removeEventListener('click', this['#onClick']);
     // Add your custom click handler
-
     // eslint-disable-next-line
     this.addEventListener('click', this._boundCustomOnClick);
+    // Add custom CSS variables
+    const style = new CSSStyleSheet();
+    style.replaceSync(`
+      #button {
+        border-bottom: 1px solid #666;
+      }
+      #button[aria-expanded='true'] {
+        border-bottom: 0px;
+      }
+
+      `);
+    // Add CSS variables via adoptedStyleSheets
+    if (this.shadowRoot) {
+      this.shadowRoot.adoptedStyleSheets = [
+        ...this.shadowRoot.adoptedStyleSheets,
+        style,
+      ];
+    }
     console.log('IbAccordionHeader connected to the DOM and patched');
   }
 

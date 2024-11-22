@@ -14,6 +14,12 @@ export class IbAccordion extends PfAccordion {
       :host {
         --pf-global--primary-color--100: #991212;
         --pf-global--link--Color:#991212;
+        --pf-c-accordion__toggle--expanded-icon--Rotate:180deg;
+        --pf-c-accordion__toggle--IconSize:24px;
+        --pf-c-accordion--m-display-lg__toggle--FontSize:0.5rem;
+        --pf-c-accordion__toggle--expanded--before--BackgroundColor: transparent;
+        --pf-c-accordion__panel--content-body--before--BackgroundColor: transparent;
+
       }`);
     // Add CSS variables via adoptedStyleSheets
     if (this.shadowRoot) {
