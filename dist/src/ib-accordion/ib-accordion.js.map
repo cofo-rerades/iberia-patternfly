@@ -1,0 +1,1 @@
+{"version":3,"file":"ib-accordion.js","sourceRoot":"","sources":["../../../src/ib-accordion/ib-accordion.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,kBAAkB,CAAC;AAE/C,MAAM,CAAC,cAAc,CAAC,MAAM,CAAC,cAAc,EAAE,WAAW,CAAC,CAAC","sourcesContent":["import { IbAccordion } from './IbAccordion.js';\n\nwindow.customElements.define('ib-accordion', IbAccordion);\n"]}

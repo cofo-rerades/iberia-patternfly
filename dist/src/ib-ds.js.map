@@ -1,0 +1,1 @@
+{"version":3,"file":"ib-ds.js","sourceRoot":"","sources":["../../src/ib-ds.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,WAAW,CAAC;AAEjC,MAAM,CAAC,cAAc,CAAC,MAAM,CAAC,OAAO,EAAE,IAAI,CAAC,CAAC","sourcesContent":["import { IbDs } from './IbDs.js';\n\nwindow.customElements.define('ib-ds', IbDs);\n"]}
