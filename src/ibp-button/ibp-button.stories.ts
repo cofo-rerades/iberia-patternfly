@@ -37,7 +37,7 @@ const Template = () => html`
 `;
 
 export const Default = Template.bind({});
-Default.args = {};
+// Default.args = {};
 
 export default {
   title: 'Components/IbpButton',
