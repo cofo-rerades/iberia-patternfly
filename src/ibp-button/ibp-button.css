@@ -1,0 +1,5 @@
+:host {
+  --pf-c-button--BorderRadius: none;
+  --pf-c-button--focus--after--BorderWidth: 10px;
+  font: 400 0.875rem/1rem Verdana;
+}
